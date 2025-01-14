@@ -1,0 +1,59 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#fce4ec">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>El Ahorcado Mágico</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1> El Ahorcado Mágico </h1>
+    
+    <div class="game-container">
+      <div class="hangman-box">
+        <svg id="hangman" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid meet">
+          <!-- Base -->
+          <line x1="20" y1="180" x2="180" y2="180" class="hangman-part" style="stroke: #ff80ab"/>
+          <!-- Poste vertical -->
+          <line x1="40" y1="180" x2="40" y2="20" class="hangman-part" style="stroke: #ff80ab"/>
+          <!-- Poste horizontal -->
+          <line x1="40" y1="20" x2="120" y2="20" class="hangman-part" style="stroke: #ff80ab"/>
+          <!-- Cuerda -->
+          <line x1="120" y1="20" x2="120" y2="40" class="hangman-part hide" data-part="rope" style="stroke: #ff80ab"/>
+          <!-- Cabeza -->
+          <circle cx="120" cy="55" r="15" class="hangman-part hide" data-part="head" style="stroke: #ff4081"/>
+          <!-- Cuerpo -->
+          <line x1="120" y1="70" x2="120" y2="110" class="hangman-part hide" data-part="body" style="stroke: #ff4081"/>
+          <!-- Brazo izquierdo -->
+          <line x1="120" y1="80" x2="100" y2="100" class="hangman-part hide" data-part="leftArm" style="stroke: #ff4081"/>
+          <!-- Brazo derecho -->
+          <line x1="120" y1="80" x2="140" y2="100" class="hangman-part hide" data-part="rightArm" style="stroke: #ff4081"/>
+          <!-- Pierna izquierda -->
+          <line x1="120" y1="110" x2="100" y2="130" class="hangman-part hide" data-part="leftLeg" style="stroke: #ff4081"/>
+          <!-- Pierna derecha -->
+          <line x1="120" y1="110" x2="140" y2="130" class="hangman-part hide" data-part="rightLeg" style="stroke: #ff4081"/>
+        </svg>
+      </div>
+      
+      <div class="word-container">
+        <div id="word" class="word"></div>
+        <p id="category" class="category"></p>
+      </div>
+
+      <div class="controls">
+        <div id="letters" class="letters" role="group" aria-label="Letras disponibles"></div>
+        <button id="hintBtn" class="hint-btn">🌟 Pista 🌟</button>
+        <p id="hint" class="hint"></p>
+      </div>
+
+      <div id="message" class="message"></div>
+      <button id="resetBtn" class="reset-btn"> Nueva Palabra </button>
+    </div>
+  </div>
+  <script type="module" src="js/game.js"></script>
+</body>
+</html>
