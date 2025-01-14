@@ -158,7 +158,7 @@
     transition: all 0.3s ease;
     margin: 3px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Comic Sans MS';
   }
   
   .letter-btn:hover {
@@ -198,7 +198,7 @@
     cursor: pointer;
     transition: all 0.3s ease;
     margin: 10px 0;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Comic Sans MS';
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     min-height: 44px; /* Minimum touch target size */
   }
@@ -270,7 +270,7 @@
     font-size: 1em;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Comic Sans MS';
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     min-height: 44px; /* Minimum touch target size */
   }
